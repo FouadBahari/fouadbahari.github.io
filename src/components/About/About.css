@@ -1,0 +1,142 @@
+.about {
+  padding: 160px 0;
+  position: relative;
+  background: var(--bg-primary);
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+}
+
+.about__container {
+  position: relative;
+}
+
+.about__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 120px;
+}
+
+.about__title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  flex: 1;
+  margin: 0;
+}
+
+.about__title-accent {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+}
+
+.about__content-right {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.about__bio {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Stats */
+.about__stats-minimal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.about__stat-minimal {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about__stat-number {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.about__stat-text {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+/* Labels */
+.about__section-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+}
+
+/* Education */
+.about__edu-degree {
+  font-size: 18px;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.about__edu-school {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Languages */
+.about__lang-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  color: var(--text-secondary);
+}
+
+.about__lang-item {
+  font-size: 15px;
+}
+
+.about__lang-level {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+  .about__top {
+    flex-direction: column;
+    gap: 80px;
+  }
+  
+  .about__title {
+    font-size: max(3.5rem, 10vw);
+  }
+
+  .about__content-right {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__stats-minimal {
+    gap: 24px;
+  }
+}
