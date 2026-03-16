@@ -137,6 +137,15 @@ export const projects = [
     tech: ['Flutter', 'Dart', 'WebSocket', 'Firebase', 'Jenkins', 'Kotlin'],
     period: 'Apr 2024 — Present',
     color: '#3b82f6',
+    url: 'https://play.google.com/store/apps/details?id=com.beyn.bdl.wimpay.customer',
+  },
+  {
+    title: 'Wimpay Cashier',
+    description: 'Merchant-facing mobile application for processing payments, managing transactions, and generating QR codes for the Wimpay ecosystem.',
+    tech: ['Flutter', 'Dart', 'WebSocket', 'Jenkins', 'REST API'],
+    period: 'Apr 2024 — Present',
+    color: '#10b981',
+    url: 'https://play.google.com/store/apps/details?id=com.beyn.bdl.wimpay.cashier',
   },
   {
     title: 'GStock POS',
@@ -151,6 +160,7 @@ export const projects = [
     tech: ['Flutter', 'Dart', 'Floor', 'SQLite'],
     period: 'May 2023 — Oct 2023',
     color: '#06b6d4',
+    url: 'https://drive.google.com/file/d/1Uhb1n-9yeSMixB2jY5SoTnxUdQWFwWiQ/view?usp=drive_link',
   },
   {
     title: 'Plaza',
@@ -158,6 +168,7 @@ export const projects = [
     tech: ['Flutter', 'Dart', 'Firebase', 'REST API'],
     period: 'Oct 2022 — Jun 2023',
     color: '#f59e0b',
+    url: 'https://play.google.com/store/apps/details?id=com.obtulus.plaza',
   },
   {
     title: 'Breezy Mood',
@@ -165,6 +176,15 @@ export const projects = [
     tech: ['Flutter', 'Dart', 'Firebase'],
     period: 'Jun 2022 — Oct 2022',
     color: '#ec4899',
+    url: 'https://play.google.com/store/apps/details?id=com.obtulus.breezymood',
+  },
+  {
+    title: 'Big Two',
+    description: 'Food Delivery App for restaurants with real-time tracking and intuitive food ordering.',
+    tech: ['Flutter', 'Dart', 'Firebase'],
+    period: 'Aug 2022',
+    color: '#ef4444',
+    url: 'https://play.google.com/store/apps/details?id=com.raniaoustani.bigtwo',
   },
 ];
 
