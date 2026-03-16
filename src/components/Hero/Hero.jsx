@@ -1,7 +1,8 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ArrowDown, ChevronRight } from 'lucide-react';
+import { ArrowDown, ChevronRight, FileText } from 'lucide-react';
 import './Hero.css';
+import { personalInfo } from '../../data/portfolioData';
 import Magnetic from '../ui/Magnetic';
 
 // Utility component to stagger text word-by-word
@@ -129,6 +130,13 @@ export default function Hero() {
               <Magnetic>
                 <a href="#contact" className="btn btn--primary">
                   Let's Talk <ChevronRight size={16} />
+                </a>
+              </Magnetic>
+            </motion.div>
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { type: "spring" } } }}>
+              <Magnetic>
+                <a href={personalInfo.resume} download className="btn btn--outline">
+                  Download CV <FileText size={16} />
                 </a>
               </Magnetic>
             </motion.div>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
-import { navLinks } from '../../data/portfolioData';
+import { Menu, X, FileText } from 'lucide-react';
+import { navLinks, personalInfo } from '../../data/portfolioData';
 import Magnetic from '../ui/Magnetic';
 import './Navbar.css';
 
@@ -61,6 +61,13 @@ export default function Navbar() {
                 </Magnetic>
               </li>
             ))}
+            <li>
+              <Magnetic damping={15} stiffness={200}>
+                <a href={personalInfo.resume} download className="navbar__link">
+                  Resume
+                </a>
+              </Magnetic>
+            </li>
           </ul>
 
           <Magnetic>
@@ -103,6 +110,17 @@ export default function Navbar() {
                   {link.label}
                 </motion.a>
               ))}
+              <motion.a
+                href={personalInfo.resume}
+                download
+                className="navbar__mobile-link"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: navLinks.length * 0.05 }}
+              >
+                <span className="navbar__mobile-num">0{navLinks.length + 1}</span>
+                Resume <FileText size={16} />
+              </motion.a>
               <a href="#contact" className="navbar__mobile-cta" onClick={() => setMobileOpen(false)}>
                 Let's Talk
               </a>
