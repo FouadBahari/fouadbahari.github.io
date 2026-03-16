@@ -13,7 +13,6 @@ export default function Footer() {
         </div>
 
         <div className="footer__right">
-          <span className="footer__tech">React · Framer Motion · V3 Design</span>
           <MagneticButton
             className="footer__top"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

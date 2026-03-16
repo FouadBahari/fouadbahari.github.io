@@ -32,7 +32,7 @@ export const personalInfo = {
     { label: 'Years Experience', value: '3+' },
     { label: 'Apps Shipped', value: '10+' },
   ],
-  resume: '/assets/fouad_bahari_resume_v4.pdf',
+  resume: '/assets/fouad_bahari_resume.pdf',
 };
 
 export const socialLinks = [
